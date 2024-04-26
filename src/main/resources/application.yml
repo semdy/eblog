@@ -9,3 +9,5 @@ file:
 im:
   server:
     port: 9326
+server:
+  port: 8081

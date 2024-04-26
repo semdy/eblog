@@ -32,9 +32,12 @@ public class ViewCountSyncTask {
         Set<String> keys = redisTemplate.keys("rank:post:*");
 
         List<String> ids = new ArrayList<>();
-        for (String key : keys) {
-            if(redisUtil.hHasKey(key, "post:viewCount")){
-                ids.add(key.substring("rank:post:".length()));
+
+        if (keys != null) {
+            for (String key : keys) {
+                if (redisUtil.hHasKey(key, "post:viewCount")) {
+                    ids.add(key.substring("rank:post:".length()));
+                }
             }
         }
 

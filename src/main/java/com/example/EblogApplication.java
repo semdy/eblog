@@ -15,7 +15,7 @@ public class EblogApplication {
 
 
         SpringApplication.run(EblogApplication.class, args);
-        System.out.println("http://localhost:8080");
+        System.out.println("http://localhost:8081");
     }
 
 }

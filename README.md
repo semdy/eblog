@@ -83,6 +83,9 @@ eblog
 
 数据库sql文件：[eblog.sql](https://github.com/MarkerHub/eblog/blob/master/eblog.sql)，和pom同一级目录哈
 
+#### 构建jar包：
+mvn clean package -Dmaven.test.skip=true
+
 #### 视频教学：
 
 [20分钟学会Docker部署SpringBoot项目(eblog)](https://www.bilibili.com/video/BV1dk4y1r7pi)
